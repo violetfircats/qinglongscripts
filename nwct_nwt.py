@@ -50,7 +50,7 @@ def get_url():
 # 执行程序
 def start_nwct():
     os.system('killall ssh>/dev/null 2>&1&&chmod 700 /root/.ssh>/dev/null 2>&1&&chmod 600 /root/.ssh/config>/dev/null 2>&1&&chown root:root /root/.ssh/config>/dev/null 2>&1')
-    os.system('nohup ssh -R 80:127.0.0.1:5700 -o StrictHostKeyChecking=no sh@sh3.neiwangyun.net > nwt.lstcml &')
+    os.system('nohup ssh -R 80:127.0.0.1:5701 -o StrictHostKeyChecking=no sh@sh3.neiwangyun.net > nwt.lstcml &')
     print("正在启动内网穿透...")
     sleep(10)
     print("正在获取穿透链接...")
